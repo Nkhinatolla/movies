@@ -1,3 +1,3 @@
-every 1.minute do 
+every 1.year do 
 	rake "parse:cities"
 end
