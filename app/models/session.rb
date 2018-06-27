@@ -14,4 +14,7 @@
 class Session < ApplicationRecord
 	belongs_to :movie
 	belongs_to :cinema
+	validates :movie_id, presence: true
+	validates :open, presence: true
+	validates :time, presence: true
 end

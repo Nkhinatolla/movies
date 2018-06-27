@@ -13,4 +13,5 @@
 class Movie < ApplicationRecord
 	has_many :sessions
 	has_many :cinemas, through: :sessions
+	validates :id, presence: true, uniqueness: true
 end
